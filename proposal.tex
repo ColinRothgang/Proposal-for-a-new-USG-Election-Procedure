@@ -1,0 +1,41 @@
+\documentclass[a4paper,10pt]{article}
+% !TeX spellcheck = en_US
+% !TeX encoding = utf8
+% !TeX program = pdflatex
+\usepackage[documenttype=Proposal, root=./, title=Proposal\ for\ a\ new\ USG\ Election\ Procedure]{usg}
+
+\newcommand{\officer}[2]{#1\\\href{mailto:#2@jacobs-university-usg.de}{#2@jacobs-university-usg.de}}
+\newcommand{\twoOfficer}[4]{\officer{#1}{#2}\\\officer{#3}{#4}}
+\newcommand{\chair}{\officer{Marco David}{m.david}}
+
+\begin{document}
+	\tableofcontents
+	\thispagestyle{main}
+	\section{Current state}
+		\input{current}
+	\section{Expected state}
+		\input{expected}
+  \section{Suggestion}
+	  \input{suggestion}
+  \section{Discussion}
+	  \input{discussion}
+	  \ \\\ \\
+  \begin{minipage}{0.5\textwidth}
+  	\begin{flushleft}
+  		On behalf of the:\\
+  		Academic Affairs Committee\\
+  		Undergraduate Student Government\\\ \\
+  		\textbf{Project officers,}\\
+  		\twoOfficer{Dan-Andrei Corbeanu}{d.corbeanu}{Colin Rothgang}{c.rothgang}
+  	\end{flushleft}
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+  	\begin{flushright}
+  		Date: \today\\\ \\\ \\\ \\
+  		\textbf{USG AAC chair,}\\
+  		\chair\ \\\ \\\ \\
+  	\end{flushright}
+  \end{minipage}
+  \phantomsection
+	\label{theEnd}
+\end{document}
